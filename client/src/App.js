@@ -1,7 +1,7 @@
 import './App.css';
 import Login from './pages/Login/'
 import NavBar from './components/NavBar/'
-import Home from './pages/Home/'
+import Prizing from './pages/Prizing/'
 // import {}
 
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
+      <Prizing />
       {/* <Routes>
       //       <Route exact path="/" component={Add} />
       //       <Route exact path="/Login" component={Login} />

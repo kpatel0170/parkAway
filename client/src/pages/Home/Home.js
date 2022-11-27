@@ -6,15 +6,35 @@ class Home extends Component {
     return (
       <>
 
-    
+        <div className="container-fluid mx-10 px-10">
+        <div className="logo d-flex justify-content-center align-items-center">
+          <h1 className="h1"><i class="bi bi-p-circle-fill"></i></h1> <br />
+          </div>
+          </div>
 
       <div className="container-fluid mx-10 px-10">
         <div className="logo d-flex justify-content-center align-items-center">
-          <h1 className="h1"><i class="bi bi-p-circle-fill"></i></h1>
+          <h1 className="h1">Looking for a Place to park!</h1>
         </div>
       </div>
       
-    <button type="submit" className="btn btn-primary">Submit</button>
+      <div className="container-fluid mx-10 px-10">
+        <div className="logo d-flex justify-content-center align-items-center">
+        <button type="submit" className="btn btn-primary ae">Request Parking Access</button> <br /> <br /> <br /> <br />
+          </div>
+          </div>
+    
+      
+
+    <div className="container"> 
+  <div className="item item1" > </div> 
+  <div className="item item2"> </div>
+  <div className="item item3"> </div>
+  <div className="item item4"> </div>
+  <div className="item item5"> </div>
+  <div className="item item5"> </div>
+  </div>
+  
     
     </>
     );
