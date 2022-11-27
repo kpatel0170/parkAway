@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import './Login.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import "bootstrap-icons/font/bootstrap-icons.css";
-
-
+// import "bootstrap-icons/font/bootstrap-icons.css";
+import { NavLink } from "react-router-dom";
 
 class Login extends Component {
   render() {
@@ -36,7 +35,7 @@ class Login extends Component {
                                                         <input type="password" name="logpass" className="form-style" placeholder="Your Password" id="logpass" autoComplete="off" />
                                                         <i className="input-icon uil uil-lock-alt"></i>
                                                     </div>
-                                                    <a href="#" className="button mt-4">submit</a>
+                                                    <NavLink to="/home" className="button mt-4">submit</NavLink>
                                                     <p className="mb-0 mt-4 text-center"><a href="#" className="link">Forgot your password?</a></p>
                                                 </form>                                      
                                                 </div>
@@ -60,7 +59,7 @@ class Login extends Component {
                                                         <input type="password" name="logpass" className="form-style" placeholder="Your Password" id="logpass" autoComplete="off" />
                                                         <i className="input-icon uil uil-lock-alt"></i>
                                                     </div>
-                                                    <a href="#" className="button mt-4">submit</a>
+                                                    <NavLink to="/home" className="button mt-4">submit</NavLink>
                                                 </div>
                                             </div>
                                         </div>
@@ -73,9 +72,6 @@ class Login extends Component {
             </div>
 
       </>
-
-
-
     );
   }
 }

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import './Home.css'
+import { NavLink } from "react-router-dom";
+
 
 class Home extends Component {
   render() {
@@ -20,7 +22,7 @@ class Home extends Component {
       
       <div className="container-fluid mx-10 px-10">
         <div className="logo d-flex justify-content-center align-items-center">
-        <button type="submit" className="btn btn-primary ae">Request Parking Access</button> <br /> <br /> <br /> <br />
+        <NavLink to="/add" className="btn btn-primary">Request Parking Access</NavLink> <br /> <br /> <br /> <br />
           </div>
           </div>
     

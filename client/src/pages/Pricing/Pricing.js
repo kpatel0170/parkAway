@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import './Prizing.css'
+import './Pricing.css'
 
-class Prizing extends Component {
+class Pricing extends Component {
   render() {
     return (
       <div className="pricing-wrapper clearfix">
@@ -70,4 +70,4 @@ class Prizing extends Component {
   }
 }
 
-export default Prizing;
+export default Pricing;
