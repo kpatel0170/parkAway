@@ -1,44 +1,27 @@
 import React, { Component } from "react";
 import './Home.css'
-import { NavLink } from "react-router-dom";
-
+import {Link} from "react-router-dom"
 
 class Home extends Component {
   render() {
     return (
       <>
-
-        <div className="container-fluid mx-10 px-10">
-        <div className="logo d-flex justify-content-center align-items-center">
-          <h1 className="h1"><i class="bi bi-p-circle-fill"></i></h1> <br />
+        <div className="container">
+          <div className="container-1">
+          <h1 className="header">Looking for a parking spot when you're in a new town ?</h1>
+          <p className="description">We will help you to get connected with those who already have it covered for you at a very low cost than what others charge you !</p>
           </div>
+          <div className="container-2">
+            <h2 className="header">or</h2>
+            <h1 className="header">Are you looking for earning some cash as a side hustle and you have a parking slot free ?</h1>
+            <p className="description">Add your parking slot as a service on our platform and get paid ! you can rent your parking slot hourly, daily or monthly !</p>
           </div>
-
-      <div className="container-fluid mx-10 px-10">
-        <div className="logo d-flex justify-content-center align-items-center">
-          <h1 className="h1">Looking for a Place to park!</h1>
+          <div className="Login-btn">
+          <button type="submit" className="btn"><a href="/login">Register yourself</a></button>
+          </div>
+          
         </div>
-      </div>
-      
-      <div className="container-fluid mx-10 px-10">
-        <div className="logo d-flex justify-content-center align-items-center">
-        <NavLink to="/add" className="btn btn-primary">Request Parking Access</NavLink> <br /> <br /> <br /> <br />
-          </div>
-          </div>
-    
-      
-
-    <div className="container"> 
-  <div className="item item1" > </div> 
-  <div className="item item2"> </div>
-  <div className="item item3"> </div>
-  <div className="item item4"> </div>
-  <div className="item item5"> </div>
-  <div className="item item5"> </div>
-  </div>
-  
-    
-    </>
+      </>
     );
   }
 }

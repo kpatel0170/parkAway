@@ -1,26 +1,27 @@
 import './App.css';
-import NavBar from './components/NavBar/'
 import Login from './pages/Login/'
-import Home from './pages/Home/'
-import Pricing from './pages/Pricing/'
-import Add from './pages/Add/'
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-import { BrowserRouter as Routes, Route} from 'react-router-dom'
-
+import NavBar from './components/NavBar/'
+import Prizing from './pages/Prizing/'
+import { Routes, Route } from "react-router-dom"
+import Home from './pages/Home/Home';
+import Adds from './pages/Listings/Adds';
+import About from './pages/Contact/contact';
+import { ContactUs } from './pages/Addlisting/Addlisting';
 
 function App() {
-  
   return (
-    <>
+    <div>
       <NavBar />
       <Routes>
-        <Route exact path="/" component={Login} />
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/add" component={Add} />
-        <Route exact path="/pricing" component={Pricing} />
-      </Routes>
-    </>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path='/pricing' element={<Prizing />} />
+            <Route path='/Listings' element={<Adds />} />
+            <Route path='/contact' element={<About />} />
+            <Route path='/addList' element={<ContactUs />} />
+        </Routes>
+      {/* <Login /> */}
+    </div>
   );
 }
 
