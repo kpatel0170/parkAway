@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import './Login.css';
+
 
 class Add extends Component {
   render() {
@@ -34,6 +34,20 @@ class Add extends Component {
           <label className="input-group-text" for="inputGroupFile01">Upload file</label>
           <input type="file" className="form-control" id="inputGroupFile01" />
         </div>
+        <div className="input-group mb-3">
+          <button type="button" class="btn btn-outline-secondary">Action</button>
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+            <ul className="dropdown-menu">
+            <li><a className="dropdown-item" href="#">India</a></li>
+              <li><a className="dropdown-item" href="#">Canada</a></li>
+              <li><a class="dropdown-item" href="#">United States</a></li>
+              <li><a className="dropdown-item" href="#"></a>Africa</li>
+            </ul>
+  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" />
+</div>
+
         {/* <div id="map-container-google-1" className="z-depth-1-half map-container" style="height: 500px">
           <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
           style="border:0" allowfullscreen></iframe>
@@ -46,11 +60,7 @@ class Add extends Component {
           <label for="Dimension" className="form-label">Dimension</label>
           <input type="number" className="form-control" id="Dimension"/>
         </div>
-        <div className="mb-3 form-check">
-          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-          <label className="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        
+                
         <button type="submit" className="btn btn-primary">Submit</button>
         <button type="submit" className="btn btn-primary">Reset</button>
         </div>

@@ -1,6 +1,8 @@
 import './App.css';
 import Login from './pages/Login/'
 import NavBar from './components/NavBar/'
+import Home from './pages/Home/'
+// import {}
 
 
 function App() {
@@ -8,7 +10,12 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Login />
+      <Home />
+      {/* <Routes>
+      //       <Route exact path="/" component={Add} />
+      //       <Route exact path="/Login" component={Login} />
+      //   </Routes>
+      <Login /> */}
     </div>
   );
 }
