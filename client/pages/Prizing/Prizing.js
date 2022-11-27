@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import './Pricing.css'
+import './Prizing.css'
 
-class Pricing extends Component {
+class Prizing extends Component {
   render() {
     return (
       <div className="pricing-wrapper clearfix">
@@ -24,7 +24,7 @@ class Pricing extends Component {
 			
 			<div className="table-buy">
 				<p>$60<sup>/ mes</sup></p>
-				<a href="#" className="pricing-action">Buy</a>
+				<a href="/contact" className="pricing-action">Buy</a>
 			</div>
 		</div>
 		
@@ -43,7 +43,7 @@ class Pricing extends Component {
 			
 			<div className="table-buy">
 				<p>$100<sup>/ day</sup></p>
-				<a href="#" className="pricing-action">Buy</a>
+				<a href="/contact" className="pricing-action">Buy</a>
 			</div>
 		</div>
 
@@ -62,7 +62,7 @@ class Pricing extends Component {
 			
 			<div className="table-buy">
 				<p>$150<sup>/ day</sup></p>
-				<a href="#" className="pricing-action">Buy</a>
+				<a href="/contact" className="pricing-action">Buy</a>
 			</div>
 		</div>
 	</div>
@@ -70,4 +70,4 @@ class Pricing extends Component {
   }
 }
 
-export default Pricing;
+export default Prizing;
